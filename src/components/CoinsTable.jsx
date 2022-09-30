@@ -67,7 +67,7 @@ const CoinsTable = () => {
                     return (
                       <tr
                         onClick={() => {
-                          navigate(`/coins/${coin.name}`);
+                          navigate(`/coins/${coin.name.toLowerCase()}`);
                         }}
                         className="cursor-pointer hover"
                         key={coin.name}
